@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>RESULT DATA - RUPAL</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Rupal Result Master System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:8000/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/about/">About us </a>
+      </li>
+      <li class="nav-item dropdown">
+<li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/contact/">Contact us </a>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav>
+
+
+
+
+
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Welcome to Rupal result system!</strong> Get ready to make results.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<h1 style="text-align:center;font-family:georgia,garamond,serif;font-size:70px;font-style:italic;text-decoration: underline;">RESULT  DATA ENTRY </h1><br>
+<div class="container">
+<form action="/result" method="get">
+
+<h7>Please Enter the Details in Capatial Letters to Print in Beautiful Manner</h7><br><br>
+<h5>School and Student Details :</h5>
+  <div class="row">
+    <div class="col">
+<label for="formGroupExampleInput2">Enter the Name of the School </label>
+      <input name='sclname' type="text" class="form-control" placeholder="School Name">
+    </div>
+
+    <div class="col">
+<label for="formGroupExampleInput2">Enter the Roll No.</label>
+      <input name='Rollno' type="text" class="form-control" placeholder="Roll No.">
+    </div>
+</div>
+
+
+ <div class="row">
+    <div class="col">
+<label for="formGroupExampleInput2">Enter Student's Name </label>
+      <input name='Firstname' type="text" class="form-control" placeholder="Student's Name">
+  </div>
+
+    <div class="col">
+<label for="formGroupExampleInput2">Enter Student's Date of Birth</label>
+      <input name='dob' type="text" class="form-control" placeholder="LIKE 15/02/2002 -- DD/MM/YYYY">
+    </div>
+<div class="form-group col-md-4">
+      <label for="formGroupExampleInput2">Gender</label>
+      <input name='gn' type="text" class="form-control" placeholder="MALE/FEMALE">
+    </div>
+
+  </div>
+
+
+<h5>Marks Obtained Details :</h5>
+
+
+ <div class="row">
+    <div class="col">
+<label for="formGroupExampleInput2">Marks Obtained in Computer Science </label>
+      <input name='cs' type="text" class="form-control" placeholder="Computer Science Marks">
+    </div>
+
+    <div class="col">
+<label for="formGroupExampleInput2">Marks Obtained in Maths</label>
+      <input name='math' type="text" class="form-control" placeholder="Maths Marks">
+    </div>
+    <div class="col">
+<label for="formGroupExampleInput2">Marks Obtained in Physics</label>
+      <input name='phy' type="text" class="form-control" placeholder="Physics Marks">
+    </div>
+  </div>
+
+
+ <div class="row">
+    <div class="col">
+<label for="formGroupExampleInput2">Marks Obtained in Chemistry </label>
+      <input name='chem' type="text" class="form-control" placeholder="Chemistry Marks">
+    </div>
+
+    <div class="col">
+<label for="formGroupExampleInput2">Marks Obtained in English</label>
+      <input name='eng' type="text" class="form-control" placeholder="English Marks">
+    
+  </div>
+ <div class="col">
+<label for="formGroupExampleInput2">Marks Obtained in Physical Education</label>
+      <input name='pe' type="text" class="form-control" placeholder="Physical Education"><br>
+    
+  </div>
+</div>
+<h5>Parents Details :</h5>
+ <div class="row">
+    <div class="col">
+<label for="formGroupExampleInput2">Student's Father Name </label>
+      <input name='fn' type="text" class="form-control" placeholder="Father Name">
+    </div>
+
+    <div class="col">
+<label for="formGroupExampleInput2">Student's Mother Name</label>
+      <input name='mn' type="text" class="form-control" placeholder="Mother Name">
+    </div>
+    </div>
+<h5></h5>
+<h5>Student Class and Session :</h5>
+<div class="row">
+    <div class="col">
+<label for="formGroupExampleInput2">Student's Class: </label>
+      <input name='clsas' type="text" class="form-control" placeholder="Like :- 12th">
+    </div>
+
+    <div class="col">
+<label for="formGroupExampleInput2">Session Year</label>
+      <input name='ses' type="text" class="form-control" placeholder="Like :- 2019-20">
+    </div>
+    </div>
+
+
+<h5></h5>
+<h5>Student Section and Attandance Details :</h5>
+<div class="row">
+<div class="form-group col-md-4">
+      <label for="formGroupExampleInput2">Student's Section </label>
+      <input name='sec' type="text" class="form-control" placeholder="Section">
+    </div>
+    <div class="col">
+<label for="formGroupExampleInput2">Total attandance </label>
+      <input name='tat' type="text" class="form-control" placeholder="Total">
+    </div>
+
+    <div class="col">
+<label for="formGroupExampleInput2">Present Days</label>
+      <input name='net' type="text" class="form-control" placeholder="Present">
+    </div>
+    </div>
+<button type="submit" class="btn btn-outline-success" >Summit Details and Go to results</button><br>
+
+
+</form>
+
+
+<br>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

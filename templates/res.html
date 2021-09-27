@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>RESULT - RUPAL</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Rupal Result Master System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:8000/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/about/">About us </a>
+      </li>
+      <li class="nav-item dropdown">
+<li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/contact/">Contact us </a>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav>
+
+
+
+
+<h1></h1>
+<div style="border:5px solid black">
+<div class="container">
+
+<h1 style="text-align:center;font-family:georgia,garamond,serif;font-size:64px;font-style:italic;">{{scl}}</h1><br>
+<h6 style="text-align:center;font-family:georgia,garamond,serif;font-size:20px;font-style:bold;text-decoration: underline;">ANNUAL REPORT CARD</h6>
+<h6 style="text-align:center;font-family:georgia,garamond,serif;font-size:20px;font-style:bold;text-decoration: underline;">SESSION - {{sessions}}</h6><br>
+<h5 style="text-align:center;font-family:georgia,garamond,serif;font-size:20px;font-style:bold;text-decoration: underline;">STUDENT DETAILS</h5>
+<p style="text-align:center;font-family:georgia,garamond,serif;font-size:17px;">NAME OF STUDENT :-{{firn}}<br>
+CLASS :-{{claass}}<br>
+ROLL NO. :-{{rn}}<br>
+GENDER:-{{gen}}<br>
+DATE OF BIRTH :-{{dog}}<br>
+FATHER NAME :-{{fatname}}<br>
+MOTHER NAME :-{{mother}}<br>
+SECTION :-{{sect}}<br>
+ATTANDANCE :-{{netatt}}/{{totatt}}<br>
+</p>
+<h6 style="font-family:georgia,garamond,serif;font-size:20px;font-style:bold;text-decoration: underline;">MARKS :-</h6>
+
+<table border = "4"  width = "950" height = "500">
+         <tr>
+            <th style="text-align:center;"> SUB CODE </th>
+            <th style="text-align:center;"> SUBJECT        </th>
+	<th style="text-align:center;"> MARKS SUBJECT WISE </th>
+	<th style="text-align:center;"> GRADE SUBJECT WISE </th>
+         </tr>
+         
+         <tr>
+            <td style="text-align:center;">101</td>
+            <td style="text-align:center;">ENGLISH COMM.</td>
+	<td style="text-align:center;">{{engli}}</td>
+	<td style="text-align:center;">{{grde}}</td>
+         </tr>
+	<tr>
+            <td style="text-align:center;">102</td>
+            <td style="text-align:center;">COMPUTER SCIENCE</td>
+	<td style="text-align:center;">{{com}}</td>
+	<td style="text-align:center;">{{grdc}}</td>
+         </tr>
+         
+         <tr>
+            <td style="text-align:center;">103</td>
+            <td style="text-align:center;">MATHEMATICS</td>
+	<td style="text-align:center;">{{mat}}</td>
+	<td style="text-align:center;">{{grdm}}</td>
+         </tr>
+	<tr>
+            <td style="text-align:center;">104</td>
+            <td style="text-align:center;">PHYSICS</td>
+	<td style="text-align:center;">{{physi}}</td>
+	<td style="text-align:center;">{{grdp}}</td>
+         </tr>
+         
+         <tr>
+            <td style="text-align:center;">105</td>
+            <td style="text-align:center;">CHEMISTRY</td>
+	<td style="text-align:center;">{{chemis}}</td>
+	<td style="text-align:center;">{{grdch}}</td>
+         </tr>
+	
+         <tr>
+            <td style="text-align:center;">106</td>
+            <td style="text-align:center;">PHYSICAL HEALTH AND EDUCATION</td>
+	<td style="text-align:center;">{{physical}}</td>
+	<td style="text-align:center;">{{grdph}}</td>
+         </tr>
+      </table>
+<br>
+<h6 style="font-family:georgia,garamond,serif;font-size:20px;font-style:bold;text-decoration: underline;">RESULT :-</h6>
+<table border = "4"  width = "950" height = "150">
+         <tr>
+            <th style="text-align:center;">OVERALL MARKS</th>
+		<th style="text-align:center;">OVERALL PERCENTAGE</th>
+            <th style="text-align:center;">OVERALL GRADE</th>
+	<th style="text-align:center;">RESULT</th>
+         </tr>
+         
+         <tr>
+            <td style="text-align:center;">{{om}}</td>
+            <td style="text-align:center;">{{op}} %</td>
+	<td style="text-align:center;">{{grd}}</td>
+	<td style="text-align:center;">{{ress}}</td>
+         </tr>
+	
+      </table><br><br>
+<h5 style="text-align:left;font-family:georgia,garamond,serif;font-size:20px;font-style:bold;">SIGNATURE OF CLASS          TEACHER :- </h5><br>
+<h5 style="text-align:left;font-family:georgia,garamond,serif;font-size:20px;font-style:bold;">SIGNATURE OF PRINCIPAL :- </h5>
+<h5 style="text-align:right;font-family:georgia,garamond,serif;font-size:20px;font-style:bold;">SCHOOL SEAL OR STAMP</h5>
+
+
+</div>
+<br>
+</div><p style="text-align:right;">THIS RESULT IS FORMED IN RUPAL MASTER PANEL<br>
+<input class="btn btn-outline-dark" style="margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%" type="button" value="PRINT RESULT" onClick="window.print()">
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

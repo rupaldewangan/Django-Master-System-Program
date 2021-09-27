@@ -7,7 +7,6 @@ Created on Sat Oct 26 14:02:30 2019
 
 from django.shortcuts import render
 import csv
-
 import mysql.connector as sqltor
 
 def home(request):

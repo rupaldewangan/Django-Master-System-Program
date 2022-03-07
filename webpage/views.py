@@ -97,11 +97,11 @@ def certificate(request):
         writer = csv.writer(csvFile)
         writer.writerow(exe1)
     csvFile.close()
-    mycon = sqltor.connect(host="localhost",user="root",passwd="rupal",database='website')
+    mycon = sqltor.connect(host="localhost",user="root",passwd="rupal",database='school')
     if mycon.is_connected():
         print("sucesss")
     cursor=mycon.cursor()
-    cdata="insert into certificatedata values('{}','{}','{}','{}','{}','{}')".format(s,r,se,f,su,sub)
+    cdata="insert into certificate values('{}','{}','{}','{}','{}','{}')".format(s,r,se,f,su,sub)
     cursor.execute(cdata)
     mycon.commit()
     
